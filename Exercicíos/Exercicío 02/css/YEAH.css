@@ -1,3 +1,10 @@
 body{
-    background-image: url(https://i.redd.it/u3sm3b6ok3o21.png);
+    background-image: url(https://i.redd.it/u3sm3b6ok3o21.png)
+
+}
+p{
+    background-color: whitesmoke;
+}
+h1{ text-align: center;
+   color: #33ffd6; 
 }
