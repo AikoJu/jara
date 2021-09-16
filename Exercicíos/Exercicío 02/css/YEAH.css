@@ -1,10 +1,14 @@
 body{
     background-image: url(https://i.redd.it/u3sm3b6ok3o21.png)
-
 }
-p{
-    background-color: whitesmoke;
+p{  font-size: x-large;
+    color:rgb(236, 217, 47);;
+    background-color: rgb(111, 32, 114);
 }
 h1{ text-align: center;
-   color: #33ffd6; 
+   color: rgb(236, 217, 47); 
+}
+Ul{
+    background-color: rgb(111, 32, 114);
+    color: rgb(236, 217, 47);
 }
