@@ -1,0 +1,26 @@
+table, tr{
+    border: 2px solid #ff6699;
+    border-collapse: collapse;
+    background-color:#beafff ;
+}
+
+td, th{
+    border: 2px solid #bada55;
+    border-collapse: collapse;
+    color: lavenderblush;
+}
+
+tr:first-child {
+    background-color: aquamarine;
+    color : pink;
+}
+
+tr:last-child {
+    background-color: indianred;
+    color:indigo;
+    text-align: center;
+}
+
+tr:hover{
+    opacity: 0.5;
+}
