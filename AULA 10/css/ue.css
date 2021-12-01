@@ -1,19 +1,24 @@
 body {
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
+    /* put elements into center */
+      width: 100%;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-image: url(https://static.vecteezy.com/ti/vetor-gratis/p1/2402683-noite-ceu-estrelado-e-nuvens-rosa-amanhecer-gr%C3%A1tis-vetor.jpg);
+      background-repeat: no-repeat;
+      background-size: 100%;
+      background-position: center;
+  }
 
-.cockpit {
+  .cockpit {
     position: absolute;
     overflow: hidden;
     z-index: 1;
     width: 195px;
     height: 195px;
     border-radius: 100px 40px 50px 50px;
-    background-color: #ff6969;
+    background-color: #ff6699;
 }
 
 .cockpit::before {
@@ -25,42 +30,100 @@ body {
     width: 170px;
     height: 170px;
     border-radius: 40px;
-    background-color:rgba(96, 199, 219);
+    background-color: rgb(15, 139, 173);
 }
-
 .cockpit::after {
     content: "";
     position: absolute;
     z-index: 1;
     top: -60px;
-    left: -60;
+    left: -60px;
     width: 170px;
     height: 170px;
     border-radius: 40px;
-    background-color:rgba(117, 233, 255);
+    background-color: #2ACEFA;
 }
 
 .tail {
     position: absolute;
-    top: 430px;
-    left: 870px;
+    top: 50px;
+    left: 150px;
     transform-origin: left center;
     border-top: 10px solid transparent;
-    border-top: 10px solid transparent;
     border-bottom: 80px solid transparent;
-    border-left: 450px solid #cf4c4c;
+    border-left: 350px solid #FF528B;
     border-bottom-right-radius: 10px;
     height: 10px;
 }
 
 .main {
     position: absolute;
-    left: 430px;
-    top: 100px;
+    left: 130px;
+    top: -10px;
     width: 40px;
     height: 20px;
-    background-color: black;
+    background: #302e37;
 }
 
+.rotor {
+    width: 700px;
+    height: 700px;
+    border-radius: 350px;
+    position: absolute;
+    top: -360px;
+    left: -200px;
+    z-index: 2;
+    overflow: hidden;
+    background-color: #a299ab;
+    opacity: 0.12;
+    transform: scaleY(0.075);
+}
 
+.rotator div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -350px;
+    margin-top: -30px;
+    width: 700px;
+    height: 80px;
+    background-color: #fff;
+}
 
+.rotator div:nth-child(1){
+    transform: rotate(0deg);
+}
+
+.rotor div:nth-child(2) {
+    transform: rotate(90deg);
+}
+
+@keyframes bounce {
+    0%,100%{
+        transform: translate(0px, -50px) rotate(-15deg);
+    }
+    50% {
+        transform: translate(0px, 50px) rotate(-10deg);
+    }
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+.helicopter {
+    animation: bounce 5s infinite; 
+}
+
+.rotator {
+    position: absolute;
+    width: 700px;
+    height: 700px;
+    border-radius: 350px;
+    animation: rotate 0.6s linear infinite;
+}
